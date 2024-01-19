@@ -1,6 +1,21 @@
 # pojo-to-xlsx
 Generates excel xlsx document from POJO. Based on "apache poi" library.
 
+## add to project:
+
+Maven:
+```xml
+<dependency>
+    <groupId>io.github.ilyakastsenevich</groupId>
+    <artifactId>pojo-to-xlsx</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
+Gradle:
+```groovy
+implementation 'io.github.ilyakastsenevich:pojo-to-xlsx:1.0.0'
+```
 
 ## code example:
 ```java
