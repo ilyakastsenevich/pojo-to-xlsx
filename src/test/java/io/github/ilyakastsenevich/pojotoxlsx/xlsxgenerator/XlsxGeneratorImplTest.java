@@ -1,7 +1,5 @@
 package io.github.ilyakastsenevich.pojotoxlsx.xlsxgenerator;
 
-
-import lombok.AllArgsConstructor;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -51,12 +49,17 @@ class XlsxGeneratorImplTest {
         Files.write(outputFile.toPath(), result);
     }
 
-    @AllArgsConstructor
     private static class YourPojo {
         // fields' names will become columns' headers
         // values will become cells' values
         private String name;
         private String valueText;
         private Integer valueInt;
+
+        YourPojo(String name, String valueText, Integer valueInt) {
+            this.name = name;
+            this.valueText = valueText;
+            this.valueInt = valueInt;
+        }
     }
 }
